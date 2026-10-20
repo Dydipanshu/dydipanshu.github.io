@@ -1,0 +1,19 @@
+# Skillwright
+
+> Skillwright is a library of production-grade Agent Skills for Claude Code, Codex, Cursor and other AI coding agents. Each skill turns your agent into a specialist for one shipping task: SEO and AI-search audits, launch copy, landing pages, payments and pre-launch security reviews.
+
+## Skills
+
+- [SEO + AEO + GEO Audit](https://dydipanshu.github.io/skills/seo-geo-audit.md): The SEO + AEO + GEO Audit skill makes your AI coding agent audit a website for Google rankings, answer-engine snippets and citations in ChatGPT, Claude, Perplexity and Gemini.
+- [Launch Kit](https://dydipanshu.github.io/skills/launch-kit.md): The Launch Kit skill writes a full product launch from your codebase: an X thread, subreddit-specific Reddit posts, a Show HN post and maker comment, a Product Hunt listing, a LinkedIn post and a 14-day posting calendar.
+- [Landing Page](https://dydipanshu.github.io/skills/landing-page.md): The Landing Page skill makes your AI agent position your product, write conversion copy section by section, and build a fast, accessible, SEO-ready landing page with pricing, FAQ and structured data.
+- [Payments Setup](https://dydipanshu.github.io/skills/payments-setup.md): The Payments Setup skill adds checkout, subscriptions and webhooks to your app with Stripe, Lemon Squeezy, Dodo Payments, Paddle or Polar.
+- [Ship Check](https://dydipanshu.github.io/skills/ship-check.md): The Ship Check skill runs a pre-launch production readiness review of your web app: leaked secrets, authorization holes, database security, error handling, monitoring, backups, performance and legal pages.
+
+## Guides
+
+- [What are Claude Code skills? A complete guide](https://dydipanshu.github.io/guides/what-are-claude-code-skills.md): What Claude Code skills are, how they work, where to install them, and how to write your own SKILL.md, with examples.
+
+## Pricing and FAQ
+
+- [Home page as Markdown](https://dydipanshu.github.io/index.md): pricing, install steps and FAQ

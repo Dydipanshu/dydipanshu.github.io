@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Launch Kit skill for Claude Code | Skillwright</title>
+<meta name="description" content="Free Claude Code skill that writes your launch: X thread, Reddit posts, Show HN, Product Hunt listing, LinkedIn post and a 14-day calendar.">
+<link rel="canonical" href="https://dydipanshu.github.io/skills/launch-kit/"><link rel="alternate" type="text/markdown" href="https://dydipanshu.github.io/skills/launch-kit.md">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Skillwright">
+<meta property="og:title" content="Launch Kit skill for Claude Code | Skillwright"><meta property="og:description" content="Free Claude Code skill that writes your launch: X thread, Reddit posts, Show HN, Product Hunt listing, LinkedIn post and a 14-day calendar.">
+<meta property="og:url" content="https://dydipanshu.github.io/skills/launch-kit/"><meta property="og:image" content="https://dydipanshu.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://dydipanshu.github.io/#org", "name": "Skillwright", "url": "https://dydipanshu.github.io/", "logo": "https://dydipanshu.github.io/favicon.svg", "sameAs": ["https://github.com/Dydipanshu/skillwright", "https://github.com/Dydipanshu"], "founder": {"@type": "Person", "name": "Deepanshu Yadav", "url": "https://github.com/Dydipanshu"}}, {"@type": "SoftwareApplication", "name": "Launch Kit skill", "applicationCategory": "DeveloperApplication", "operatingSystem": "Claude Code, Codex, Cursor", "description": "The Launch Kit skill writes a full product launch from your codebase: an X thread, subreddit-specific Reddit posts, a Show HN post and maker comment, a Product Hunt listing, a LinkedIn post and a 14-day posting calendar. Copy is written natively for each platform's rules and culture, and never invents metrics or testimonials.", "url": "https://dydipanshu.github.io/skills/launch-kit/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@id": "https://dydipanshu.github.io/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dydipanshu.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Skills", "item": "https://dydipanshu.github.io/#skills"}, {"@type": "ListItem", "position": 3, "name": "Launch Kit", "item": "https://dydipanshu.github.io/skills/launch-kit/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the Launch Kit skill do?", "acceptedAnswer": {"@type": "Answer", "text": "The Launch Kit skill writes a full product launch from your codebase: an X thread, subreddit-specific Reddit posts, a Show HN post and maker comment, a Product Hunt listing, a LinkedIn post and a 14-day posting calendar. Copy is written natively for each platform's rules and culture, and never invents metrics or testimonials."}}, {"@type": "Question", "name": "Is Launch Kit free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it's free and open source."}}]}]}</script>
+</head><body>
+<header class="nav"><a class="logo" href="/">Skillwright</a>
+<nav><a href="/#skills">Skills</a><a href="/#pricing">Pricing</a><a href="/guides/what-are-claude-code-skills/">Guide</a><a href="https://github.com/Dydipanshu/skillwright">GitHub</a></nav></header>
+<main><article><p class="crumbs"><a href="/">Home</a> / <a href="/#skills">Skills</a> / Launch Kit</p>
+<h1>Launch Kit skill for Claude Code</h1>
+<p class="lead">The Launch Kit skill writes a full product launch from your codebase: an X thread, subreddit-specific Reddit posts, a Show HN post and maker comment, a Product Hunt listing, a LinkedIn post and a 14-day posting calendar. Copy is written natively for each platform&#x27;s rules and culture, and never invents metrics or testimonials.</p>
+<p><strong>Try it:</strong> <em>"Write a launch kit for this project"</em></p>
+<h2>When should you use it?</h2><ul><li>Launching a SaaS, app or open-source project</li><li>Getting your first 100 users</li><li>Writing a Show HN or Product Hunt launch</li><li>Planning build-in-public posts</li></ul>
+<h2>What's inside the skill?</h2><ol><li>Step 1: Gather facts (read before asking)</li><li>Step 2: Write each asset</li><li>X / Twitter thread (5-8 posts)</li><li>Reddit (one version per subreddit, 3-5 subreddits)</li><li>Hacker News &quot;Show HN&quot;</li><li>Product Hunt</li><li>LinkedIn post</li><li>Step 3: 14-day calendar</li><li>Rules</li></ol>
+<h2>How do I install Launch Kit?</h2>
+<pre><code>mkdir -p ~/.claude/skills/launch-kit
+curl -L https://github.com/Dydipanshu/skillwright/raw/main/skills/launch-kit/SKILL.md -o ~/.claude/skills/launch-kit/SKILL.md</code></pre>
+<h2>Full SKILL.md</h2><pre class="src"><code>---
+name: launch-kit
+description: Write a complete launch kit for a product - X/Twitter thread, Reddit posts tailored per subreddit, Hacker News &quot;Show HN&quot;, Product Hunt listing, LinkedIn post, and a 14-day posting calendar. Use when the user is launching a product, feature or project, asks for launch posts, social copy, or &quot;how do I get my first users&quot;.
+---
+
+# Launch Kit
+
+You write launch copy that gets real users, not vanity likes. Every platform has its own culture;
+copy that works on X gets removed on Reddit and flagged on Hacker News. Write for each one natively.
+
+## Step 1: Gather facts (read before asking)
+
+Read the README, landing page, pricing and recent commits. Extract:
+
+- What it does, in one sentence a non-expert understands
+- Who it&#x27;s for (specific: &quot;solo founders shipping SaaS&quot;, not &quot;everyone&quot;)
+- The painful problem it removes, and what people do today instead
+- Proof: numbers, demos, screenshots, benchmarks, early user quotes
+- Price and whether there&#x27;s a free tier or trial
+- The founder&#x27;s story: why they built it (one or two true sentences)
+
+Ask the user only for what you can&#x27;t find. Never invent users, metrics, testimonials or press.
+
+## Step 2: Write each asset
+
+### X / Twitter thread (5-8 posts)
+- Post 1: the hook. A specific outcome or surprising fact, not &quot;I&#x27;m excited to announce&quot;. Under 200 chars.
+- Posts 2-6: problem, what you built, a demo (tell the user where a GIF/video goes), how it works, proof
+- Last post: link plus a clear ask (try it, reply with feedback, repost if useful)
+- Also write 3 standalone follow-up posts for later days (a build lesson, a metric, a user story)
+
+### Reddit (one version per subreddit, 3-5 subreddits)
+- Pick subreddits where the audience has the problem, and note each one&#x27;s self-promotion rules
+  (many require a ratio of non-promotional activity, or only allow it on specific weekdays/threads)
+- Lead with value: what you learned, how you solved it. Mention the product late, plainly, once.
+- Title as a statement or question a member would write, not an ad. No emojis or hype words.
+- Flag subreddits where a direct link will likely get removed and suggest a comment-link approach
+
+### Hacker News &quot;Show HN&quot;
+- Title: `Show HN: &lt;Name&gt; – &lt;plain description of what it does&gt;` (no superlatives)
+- First comment from the maker: what it is, why you built it, how it works technically,
+  what&#x27;s rough, what feedback you want. Humble and specific. HN rewards technical depth.
+
+### Product Hunt
+- Tagline (60 chars max), description (260 chars), 3-5 topic tags
+- Maker&#x27;s first comment (story + what&#x27;s special + launch-day offer if any)
+- Gallery plan: 4-6 image captions in order
+- Note: launch 12:01am Pacific; tell the user to line up supporters to comment, not just upvote
+
+### LinkedIn post
+- First 2 lines must earn the &quot;see more&quot; click. Story-led, one lesson, product as the result.
+
+## Step 3: 14-day calendar
+
+A table: day, platform, asset, goal. Spread launches so the user can reply to every comment
+(engagement in the first hours decides reach). Include build-in-public posts after launch day.
+
+## Rules
+
+- Write in the founder&#x27;s voice: first person, plain words, specific numbers
+- Banned phrases: &quot;game-changer&quot;, &quot;revolutionize&quot;, &quot;excited to announce&quot;, &quot;unlock&quot;, &quot;supercharge&quot;,
+  &quot;in today&#x27;s fast-paced world&quot;
+- Every claim must be checkable from the product or the user&#x27;s own words
+- Output everything in one Markdown file (`launch-kit.md`) so the user can copy-paste
+</code></pre>
+<h2>FAQ</h2><details><summary><h3>What does the Launch Kit skill do?</h3></summary><p>The Launch Kit skill writes a full product launch from your codebase: an X thread, subreddit-specific Reddit posts, a Show HN post and maker comment, a Product Hunt listing, a LinkedIn post and a 14-day posting calendar. Copy is written natively for each platform&#x27;s rules and culture, and never invents metrics or testimonials.</p></details><details><summary><h3>Is Launch Kit free?</h3></summary><p>Yes, it&#x27;s free and open source.</p></details></article></main>
+<footer><p>Skillwright · Production-grade skills for Claude Code and AI coding agents · Updated <time datetime="2026-10-20">2026-10-20</time></p>
+<p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="https://github.com/Dydipanshu/skillwright/issues">Support</a> · <a href="/llms.txt">llms.txt</a></p></footer>
+</body></html>

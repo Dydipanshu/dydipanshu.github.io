@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SEO + AEO + GEO Audit skill for Claude Code | Skillwright</title>
+<meta name="description" content="Free Claude Code skill that audits your site for SEO, AEO and GEO, then fixes it: meta tags, JSON-LD, sitemap, robots.txt and llms.txt.">
+<link rel="canonical" href="https://dydipanshu.github.io/skills/seo-geo-audit/"><link rel="alternate" type="text/markdown" href="https://dydipanshu.github.io/skills/seo-geo-audit.md">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Skillwright">
+<meta property="og:title" content="SEO + AEO + GEO Audit skill for Claude Code | Skillwright"><meta property="og:description" content="Free Claude Code skill that audits your site for SEO, AEO and GEO, then fixes it: meta tags, JSON-LD, sitemap, robots.txt and llms.txt.">
+<meta property="og:url" content="https://dydipanshu.github.io/skills/seo-geo-audit/"><meta property="og:image" content="https://dydipanshu.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://dydipanshu.github.io/#org", "name": "Skillwright", "url": "https://dydipanshu.github.io/", "logo": "https://dydipanshu.github.io/favicon.svg", "sameAs": ["https://github.com/Dydipanshu/skillwright", "https://github.com/Dydipanshu"], "founder": {"@type": "Person", "name": "Deepanshu Yadav", "url": "https://github.com/Dydipanshu"}}, {"@type": "SoftwareApplication", "name": "SEO + AEO + GEO Audit skill", "applicationCategory": "DeveloperApplication", "operatingSystem": "Claude Code, Codex, Cursor", "description": "The SEO + AEO + GEO Audit skill makes your AI coding agent audit a website for Google rankings, answer-engine snippets and citations in ChatGPT, Claude, Perplexity and Gemini. It scores the site, lists the top fixes by impact, then implements them in your codebase: meta tags, structured data, sitemap, robots.txt and llms.txt.", "url": "https://dydipanshu.github.io/skills/seo-geo-audit/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@id": "https://dydipanshu.github.io/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dydipanshu.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Skills", "item": "https://dydipanshu.github.io/#skills"}, {"@type": "ListItem", "position": 3, "name": "SEO + AEO + GEO Audit", "item": "https://dydipanshu.github.io/skills/seo-geo-audit/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the SEO + AEO + GEO Audit skill do?", "acceptedAnswer": {"@type": "Answer", "text": "The SEO + AEO + GEO Audit skill makes your AI coding agent audit a website for Google rankings, answer-engine snippets and citations in ChatGPT, Claude, Perplexity and Gemini. It scores the site, lists the top fixes by impact, then implements them in your codebase: meta tags, structured data, sitemap, robots.txt and llms.txt."}}, {"@type": "Question", "name": "Is SEO + AEO + GEO Audit free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it's free and open source."}}]}]}</script>
+</head><body>
+<header class="nav"><a class="logo" href="/">Skillwright</a>
+<nav><a href="/#skills">Skills</a><a href="/#pricing">Pricing</a><a href="/guides/what-are-claude-code-skills/">Guide</a><a href="https://github.com/Dydipanshu/skillwright">GitHub</a></nav></header>
+<main><article><p class="crumbs"><a href="/">Home</a> / <a href="/#skills">Skills</a> / SEO + AEO + GEO Audit</p>
+<h1>SEO + AEO + GEO Audit skill for Claude Code</h1>
+<p class="lead">The SEO + AEO + GEO Audit skill makes your AI coding agent audit a website for Google rankings, answer-engine snippets and citations in ChatGPT, Claude, Perplexity and Gemini. It scores the site, lists the top fixes by impact, then implements them in your codebase: meta tags, structured data, sitemap, robots.txt and llms.txt.</p>
+<p><strong>Try it:</strong> <em>"Audit this site for SEO, AEO and GEO and fix the top issues"</em></p>
+<h2>When should you use it?</h2><ul><li>Your site isn&#x27;t showing up on Google</li><li>You want ChatGPT or Perplexity to cite your product</li><li>You need valid JSON-LD structured data</li><li>You&#x27;re adding llms.txt and AI crawler rules</li></ul>
+<h2>What's inside the skill?</h2><ol><li>Step 1: Find what you&#x27;re auditing</li><li>Step 2: Run the checklist</li><li>Crawlability and indexing (SEO)</li><li>On-page (SEO)</li><li>Performance (SEO ranking factor)</li><li>Answer readiness (AEO)</li><li>AI citation readiness (GEO)</li><li>Step 3: Report</li><li>Step 4: Fix</li><li>Rules</li></ol>
+<h2>How do I install SEO + AEO + GEO Audit?</h2>
+<pre><code>mkdir -p ~/.claude/skills/seo-geo-audit
+curl -L https://github.com/Dydipanshu/skillwright/raw/main/skills/seo-geo-audit/SKILL.md -o ~/.claude/skills/seo-geo-audit/SKILL.md</code></pre>
+<h2>Full SKILL.md</h2><pre class="src"><code>---
+name: seo-geo-audit
+description: Audit a website or web codebase for SEO (Google), AEO (answer engines, featured snippets) and GEO (getting cited by ChatGPT, Claude, Perplexity, Gemini), then fix what it finds. Use when the user asks to improve search ranking, SEO, AI visibility, rich results, structured data, llms.txt, or &quot;why doesn&#x27;t my site show up&quot;.
+---
+
+# SEO + AEO + GEO Audit
+
+You audit a site against three audiences: search engine crawlers (SEO), answer boxes and voice
+assistants (AEO), and LLM-based search and chat products (GEO). Then you fix the issues directly
+in the codebase, highest impact first.
+
+## Step 1: Find what you&#x27;re auditing
+
+- If the user gave a URL, fetch the homepage plus 2-3 key pages, `/robots.txt`, `/sitemap.xml`
+  and `/llms.txt`.
+- If you&#x27;re in a codebase, find the framework (Next.js, Astro, Hugo, plain HTML, etc.) and where
+  `&lt;head&gt;` tags, routes and static files live. Run the dev build if needed and inspect rendered HTML,
+  not just source templates.
+- Ask the user one question if unclear: &quot;What are the 3-5 searches you most want to show up for?&quot;
+  If they don&#x27;t know, infer them from the product and state your assumption.
+
+## Step 2: Run the checklist
+
+Score each item PASS / WARN / FAIL with a one-line reason and the file or URL it applies to.
+
+### Crawlability and indexing (SEO)
+- Pages return 200, render meaningful HTML without JavaScript (view-source has the main content)
+- `robots.txt` exists, does not block important paths, links to the sitemap
+- `sitemap.xml` exists, lists every indexable page with `&lt;lastmod&gt;`, no 404s or redirects in it
+- Each page has a self-referencing `&lt;link rel=&quot;canonical&quot;&gt;`; no duplicate URLs (trailing slash, www, http)
+- No accidental `noindex` on pages that should rank
+- Internal links: every important page reachable within 3 clicks, descriptive anchor text
+
+### On-page (SEO)
+- Unique `&lt;title&gt;` per page, under 60 characters, primary keyword first
+- Unique meta description per page, 120-160 characters, says what the reader gets
+- Exactly one `&lt;h1&gt;`, logical h2/h3 hierarchy, keyword in the h1
+- Images have descriptive `alt`, explicit width/height, modern formats, lazy-loading below the fold
+- `lang` attribute on `&lt;html&gt;`, viewport meta present
+- Open Graph and Twitter card tags (title, description, image 1200x630)
+
+### Performance (SEO ranking factor)
+- Largest Contentful Paint under 2.5s, CLS under 0.1, INP under 200ms (use Lighthouse or PageSpeed if available)
+- No render-blocking scripts in `&lt;head&gt;`; fonts use `font-display: swap`
+- Total page weight reasonable; no multi-MB hero images
+
+### Answer readiness (AEO)
+- Key pages lead with a direct, 40-60 word answer to the page&#x27;s main question before elaborating
+- Question-shaped headings (&quot;How much does X cost?&quot;) followed by a concise answer paragraph
+- FAQ section for real customer questions, marked up with `FAQPage` JSON-LD
+- Lists and tables for steps, comparisons and specs (these get pulled into snippets)
+- Structured data valid for the page type: `Organization`, `WebSite`, `Product`/`SoftwareApplication`
+  (with `offers`), `Article` (with `author`, `datePublished`), `HowTo`, `BreadcrumbList`
+
+### AI citation readiness (GEO)
+- `robots.txt` explicitly allows AI crawlers the user wants to be cited by: `GPTBot`, `OAI-SearchBot`,
+  `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot`, `PerplexityBot`, `Google-Extended`, `Applebot-Extended`
+- `/llms.txt` exists: product name, one-paragraph summary, and links to the most important pages
+  (ideally with Markdown versions)
+- Content is quotable: specific numbers, named entities, clear definitions, original data or
+  examples an LLM can attribute (&quot;X costs $9.99/month and includes Y&quot;)
+- Consistent entity naming: the product name, category and one-line description are identical
+  across the site, structured data, and external profiles
+- Author and organization credibility signals: about page, real author names, `sameAs` links to
+  GitHub/X/LinkedIn in `Organization` JSON-LD
+- Comparison and &quot;best X for Y&quot; pages exist for the product&#x27;s category, written fairly (LLMs
+  heavily cite these)
+- Freshness: visible &quot;last updated&quot; dates on content that changes
+
+## Step 3: Report
+
+Output a short report:
+
+1. **Score**: SEO x/10, AEO x/10, GEO x/10, one sentence each on why
+2. **Top 5 fixes by impact**, each with the exact file and what to change
+3. **Full checklist table** (item, status, note)
+4. **Content gaps**: 3-5 pages that should exist to win the target searches, with suggested
+   title, h1 and the question each one answers
+
+## Step 4: Fix
+
+Unless the user only asked for a report, implement the top fixes:
+
+- Add or correct meta tags, canonicals, OG tags in the framework&#x27;s head mechanism (don&#x27;t hand-edit
+  build output)
+- Generate `robots.txt`, `sitemap.xml` and `llms.txt` from the route list so they stay in sync
+- Add JSON-LD as `&lt;script type=&quot;application/ld+json&quot;&gt;`, generated from the same data the page
+  renders, so markup never drifts from visible content
+- Never invent facts for structured data or FAQ answers (prices, ratings, reviews, dates). Use
+  what&#x27;s on the page, or ask the user. Fake `aggregateRating` can earn a Google manual penalty.
+
+After fixing, re-check the changed items and show the before/after for each.
+
+## Rules
+
+- Prioritize by impact on the user&#x27;s target searches, not checklist completeness
+- Don&#x27;t recommend keyword stuffing, hidden text, doorway pages, or buying links
+- Don&#x27;t block AI crawlers unless the user asks; explain the trade-off (training vs. citation) if they do
+- Validate JSON-LD syntax before finishing (parse it as JSON at minimum)
+</code></pre>
+<h2>FAQ</h2><details><summary><h3>What does the SEO + AEO + GEO Audit skill do?</h3></summary><p>The SEO + AEO + GEO Audit skill makes your AI coding agent audit a website for Google rankings, answer-engine snippets and citations in ChatGPT, Claude, Perplexity and Gemini. It scores the site, lists the top fixes by impact, then implements them in your codebase: meta tags, structured data, sitemap, robots.txt and llms.txt.</p></details><details><summary><h3>Is SEO + AEO + GEO Audit free?</h3></summary><p>Yes, it&#x27;s free and open source.</p></details></article></main>
+<footer><p>Skillwright · Production-grade skills for Claude Code and AI coding agents · Updated <time datetime="2026-10-20">2026-10-20</time></p>
+<p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="https://github.com/Dydipanshu/skillwright/issues">Support</a> · <a href="/llms.txt">llms.txt</a></p></footer>
+</body></html>
